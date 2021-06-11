@@ -1,11 +1,8 @@
-// On utilise le mode strict
 "use strict";
 
 let rectangle;
 let toggleButton;
 
-// Code appelé lorsque tous les éléments du DOM sont chargés
-// => On est sûr que document.querySelector trouvera les éléments
 document.addEventListener('DOMContentLoaded', function () {
     // Données
     rectangle = document.querySelector('.rectangle');
@@ -18,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     rectangle.addEventListener('dblclick', onDblClickRectangle);
 });
 
-// Fonctions
 function onToggleRectangle()
 {
     rectangle.classList.toggle('hide');
